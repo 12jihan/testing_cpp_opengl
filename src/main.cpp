@@ -33,6 +33,10 @@ int main(void)
     // updates with the version once it passes:
     std::cout << glGetString(GL_VERSION) << std::endl;
 
+    // Define a vertex buffer:
+    unsigned int buffer;
+    glGenBuffers(1, &buffer);
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
